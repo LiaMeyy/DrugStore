@@ -129,13 +129,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 100px;
+  align-items: center;
+  gap: 70px;
   color: rgb(170, 165, 165);
 }
 
 .estado span {
   font-size: 10px;
   color: rgb(170, 165, 165);
+  padding-right:20px ;
 }
 
 .Secciones {
@@ -191,10 +193,11 @@ body {
 
 .recuadroPadre img {
   position: absolute;
-  top: 6px;
-  left: 360px;
+  bottom: 0;
+  right: 0;
   z-index: 2;
-  width: 150px;
+  width: 30%;
+  height: 90%;
 
 }
 
@@ -247,19 +250,6 @@ body {
   font-weight: bold;
 }
 
-.recuadroPa {
-  display: flex;
-  width: 90%;
-  height: 260px;
-  position: relative;
-}
-
-.recuadroPa img {
-  position: absolute;
-  left: 370px;
-  z-index: 2;
-  width: 140px;
-}
 
 .language-selector {
   font-family: sans-serif;
@@ -585,10 +575,3 @@ font-size: 20px;
 }
 
 
-@media (max-width: 900px) {
-  .footer-container { grid-template-columns: repeat(2, 1fr); padding: 0 20px; }
-  .PiePag { padding-left: 40px; padding-right: 40px; }
-}
-@media (max-width: 600px) {
-  .footer-container { grid-template-columns: 1fr; }
-}
